@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <!-- soft floating background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- scroll progress bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header>
+    <a href="#" class="logo">Portfolio</a>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-img reveal">
+      <img src="me.jpg" alt="Alaa Hallak" />
+    </div>
+    <div class="home-content">
+      <h1 class="reveal"><span class="typing">Alaa Hallak</span></h1>
+      <h3 class="reveal">Powered by voltage and ambition :)</h3>
+    </div>
+
+    <div class="social-icons reveal">
+      <a href="mailto:alaa-halak2004@hotmail.com" target="_blank" class="icon email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/alaa-hallak-12ba41326/" target="_blank" class="icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/AlaaHallak" target="_blank" class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- quirky scrolling tech band -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Python ✦ C++ ✦ MATLAB ✦ Cybersecurity ✦ Machine Learning ✦ IoT ✦ Simulink ✦ LTspice ✦ Data Science ✦ Edge AI ✦&nbsp;</span>
+      <span>Python ✦ C++ ✦ MATLAB ✦ Cybersecurity ✦ Machine Learning ✦ IoT ✦ Simulink ✦ LTspice ✦ Data Science ✦ Edge AI ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="about-content reveal">
+      <h2><span>About Me</span></h2>
+      <p>I am an enthusiastic and detail-oriented Electrical and Computer Engineer driven
+        by curiosity and a passion for technology. My background spans
+        embedded systems, cybersecurity, software development, and machine learning, supported by
+        hands-on experience with Python, C++, MATLAB, LTspice, and Simulink.
+        I enjoy tackling complex challenges, learning new skills, and turning theoretical
+        concepts into practical solutions.</p>
+      <p>I am passionate about continuous learning and am seeking opportunities that allow me
+        to solve challenging problems, develop new skills, and create meaningful impact through technology.</p>
+      <div class="keyword-tags">
+        <span>Quick Learner</span>
+        <span>Adaptability</span>
+        <span>Team Collaboration</span>
+        <span>Problem Solving</span>
+        <span>Presentation</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <div class="education-content">
+      <h2 class="reveal"><span>Education</span></h2>
+
+      <div class="edu-entry reveal">
+        <a href="https://www.effatuniversity.edu.sa/English/Pages/default.aspx" target="_blank" class="edu-logo-link" aria-label="Effat University">
+          <img src="effat.png" alt="Effat University logo" class="edu-logo">
+        </a>
+        <div class="edu-left">
+          <h3>Bachelor's Degree in Electrical and Computer Engineering</h3>
+          <p><strong>Institution:</strong> <a href="https://www.effatuniversity.edu.sa/English/Pages/default.aspx" target="_blank">Effat University</a></p>
+          <p><strong>Academic Standing:</strong>  First Class Honors</p>
+          <p><strong>GPA:</strong>  3.8 / 4.0</p>
+          <ul>
+            <li>Dean’s List: 2022–2023, 2025–2026</li>
+            <li>Relevant courses: Introduction to AI, Optical Communication Systems, Optoelectronic Devices,
+              Renewable Electrical Energy, Modern Control</li>
+          </ul>
+        </div>
+        <div class="edu-right">
+          <p>2021 – 2026</p>
+        </div>
+      </div>
+
+      <div class="edu-entry reveal">
+        <a href="https://www.tis.edu.sa/" target="_blank" class="edu-logo-link" aria-label="Thamer International School">
+          <img src="thamer-international-schools-jeddah-saudi-arabia.jpg" alt="Thamer International School logo" class="edu-logo">
+        </a>
+        <div class="edu-left">
+          <h3>High School Diploma</h3>
+          <p><strong>Institution:</strong> <a href="https://www.tis.edu.sa/" target="_blank">Thamer International School</a></p>
+          <p><strong>GPA:</strong> 3.92 / 4.0</p>
+          <ul>
+            <li>Consistent honor roll</li>
+            <li>Completed Cambridge A-Levels in Advanced Mathematics and Advanced Chemistry</li>
+            <li>Completed Cambridge AS levels in Physics and Biology</li>
+          </ul>
+        </div>
+        <div class="edu-right">
+          <p>2017 – 2021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="experience-content">
+      <h2 class="reveal"><span>Experience</span></h2>
+
+      <div class="exp-grid">
+        <!-- GREENER by IHCC -->
+        <div class="exp-card reveal">
+          <a href="https://green-er.com/" target="_blank">
+            <img src="greener.jpg" alt="GREENER by IHCC Logo">
+          </a>
+          <h3>Electrical Engineer Intern</h3>
+          <p><strong>GREENER by IHCC – Jeddah</strong></p>
+          <p class="exp-date">Summer 2024</p>
+          <ul>
+            <li>Assisted with an ASHRAE Level II energy audit for a commercial building by collecting HVAC and
+              lighting measurements and identifying energy inefficiencies.</li>
+            <li>Performed energy benchmarking using EUI and ECI metrics and contributed to proposing Energy Saving Measures (ESMs).</li>
+            <li>Explored solar energy systems and EV charging infrastructure.</li>
+            <li>Worked on testing and commissioning projects focused on energy efficiency.</li>
+          </ul>
+        </div>
+
+        <!-- NBK -->
+        <div class="exp-card reveal">
+          <a href="https://www.nbk.com/ksa/" target="_blank">
+            <img src="NBK.jpg" alt="NBK Logo">
+          </a>
+          <h3>Cybersecurity Intern</h3>
+          <p><strong>National Bank of Kuwait (NBK) – Jeddah</strong></p>
+          <p class="exp-date">Summer 2025</p>
+          <ul>
+            <li>Performed vulnerability scans using Nessus and resolved asset discrepancies to improve coverage accuracy.</li>
+            <li>Conducted vendor risk assessments and reviewed contracts to identify security risks.</li>
+            <li>Mapped controls to the SAMA Cybersecurity Framework (CSF) and supported compliance gap assessments with evidence collection.</li>
+            <li>Evaluated remediation proposals and budgets as part of vendor onboarding activities.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="skills-content">
+      <h2 class="reveal"><span>Skills</span></h2>
+
+      <div class="skills-columns">
+
+        <!-- Programming -->
+        <div class="skills-category card reveal">
+          <h3>Programming</h3>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>C++</span>
+            <span>MATLAB</span>
+          </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="skills-category card reveal">
+          <h3>Cybersecurity</h3>
+          <div class="skills-list">
+            <span>Vulnerability Assessment</span>
+            <span>Risk Assessment</span>
+            <span>SAMA Cybersecurity Framework</span>
+          </div>
+        </div>
+
+        <!-- Data & ML -->
+        <div class="skills-category card reveal">
+          <h3>Data & Machine Learning</h3>
+          <div class="skills-list">
+            <span>Machine Learning</span>
+            <span>Feature Engineering</span>
+            <span>PCA</span>
+            <span>XGBoost</span>
+            <span>Random Forest</span>
+            <span>SVM</span>
+            <span>Data Visualization</span>
+          </div>
+        </div>
+
+        <!-- Engineering Tools -->
+        <div class="skills-category card reveal">
+          <h3>Engineering Tools</h3>
+          <div class="skills-list">
+            <span>Simulink</span>
+            <span>LTspice</span>
+            <span>Technical Documentation</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category card reveal">
+          <h3>Soft Skills</h3>
+          <div class="skills-list">
+            <span>Problem Solving</span>
+            <span>Team Collaboration</span>
+            <span>Communication</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skills-category card reveal">
+          <h3>Languages</h3>
+          <div class="skills-list">
+            <span>Arabic</span>
+            <span>English</span>
+            <span>French (Basic)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="projects-content">
+      <h2 class="reveal"><span>Projects</span></h2>
+
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <h3>Epileptic Seizure Detection Using Chaotic Analysis</h3>
+          <p>Developed an automated EEG seizure detection framework using signal processing, chaos theory, and machine learning classifiers (SVM, XGBoost, Random Forest), achieving 90.8% seizure recall.</p>
+          <div class="tags">
+            <span>Machine Learning</span>
+            <span>Python</span>
+            <span>Signal Processing</span>
+            <span>Feature Engineering</span>
+            <span>Classification</span>
+            <span>Data Science</span>
+          </div>
+          <a href="https://github.com/AlaaHallak/eeg-seizure-detection-chaos/tree/main" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <h3>AI-Driven IoT Plant Care System</h3>
+          <p>Designed and implemented an intelligent plant care system using deep learning, IoT sensors, and edge AI. Includes crop-care prediction, plant suitability evaluation, and Raspberry Pi deployment via knowledge distillation.</p>
+          <div class="tags">
+            <span>Deep Learning</span>
+            <span>Machine Learning</span>
+            <span>IoT</span>
+            <span>Edge AI</span>
+            <span>Python</span>
+          </div>
+          <a href="https://github.com/AlaaHallak/AI-IoT-Plant-Care-System" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <h3>Pandas Tutorial</h3>
+          <p>An introductory tutorial on using Pandas for data manipulation and analysis in Python. Covers dataframes, series, and basic operations.</p>
+          <div class="tags">
+            <span>Data Science</span>
+            <span>Data Visualization</span>
+          </div>
+          <a href="https://github.com/AlaaHallak/Pandas-Tutorial" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <h3>Global Active Power Consumption Prediction</h3>
+          <p>Machine learning model predicting global active power consumption using historical data and feature engineering.</p>
+          <div class="tags">
+            <span>Data Science</span>
+            <span>Linear Regression</span>
+          </div>
+          <a href="https://github.com/AlaaHallak/Global-Active-Power-Consumption-Prediction" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal">
+          <h3>Weather Condition Prediction</h3>
+          <p>Classification model predicting weather conditions based on historical meteorological data.</p>
+          <div class="tags">
+            <span>Data Science</span>
+            <span>Classification</span>
+          </div>
+          <a href="https://github.com/AlaaHallak/Weather-Condition-Prediction" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="contact-content reveal">
+      <h2><span>Contact Me</span></h2>
+      <p>If you'd like to collaborate, ask a question, or just say hi, feel free to reach out!</p>
+
+      <form action="https://formspree.io/f/xyzbzjwn" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- back to top -->
+  <a href="#home" class="to-top" id="to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+    // ===== sticky header + scroll progress =====
+    const header = document.querySelector("header");
+    const progress = document.getElementById("scroll-progress");
+    const toTop = document.getElementById("to-top");
+
+    function onScroll() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = (scrollTop / docHeight) * 100 + "%";
+      header.classList.toggle("scrolled", scrollTop > 30);
+      toTop.classList.toggle("show", scrollTop > 500);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    // ===== mobile menu =====
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("open");
+      nav.classList.toggle("active");
+    });
+    nav.querySelectorAll("a").forEach(link =>
+      link.addEventListener("click", () => {
+        menuToggle.classList.remove("open");
+        nav.classList.remove("active");
+      })
+    );
+
+    // ===== reveal on scroll =====
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+
+    // ===== active nav link while scrolling =====
+    const navLinks = document.querySelectorAll("nav a");
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach(link =>
+            link.classList.toggle("active", link.getAttribute("href") === "#" + id)
+          );
+        }
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("section[id]").forEach(sec => sectionObserver.observe(sec));
+  </script>
+
+</body>
+</html>
